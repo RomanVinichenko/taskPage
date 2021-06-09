@@ -1,0 +1,31 @@
+.portfolio {
+  padding: 130px 0;
+
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: $title;
+  }
+  &__descr {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    width: 730px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+  &__filter-items {
+    display: flex;
+  }
+
+  &__filter-item {
+    border: none;
+    background-color: $wh;
+  }
+
+  &__filter-btn
+
+}

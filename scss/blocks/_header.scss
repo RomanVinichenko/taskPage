@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: $wh;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__items {
+      display: flex;
+    }
+
+    &__item {
+      margin-right: 30px;
+      font-weight: 600;
+    }
+
+    &__item-link {
+      display: block;
+      padding: 42px 0;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background: #000;
+        transition: width 0.3s linear;
+      }
+      &:hover::before{
+        width: 100%;
+      }
+    }
+  }
+}
