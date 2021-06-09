@@ -1,0 +1,58 @@
+.team {
+  padding: 130px 0;
+  background-color: $bg-dark;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 360px;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__item-img {
+
+    object-fit: cover;
+    overflow: hidden;
+    width: 360px;
+    height: 368px;
+    transition: transform 0.6s;
+    &:hover {
+      .team__item-img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__item-content {
+    padding: 25px;
+    overflow: hidden;
+    display: block;
+    z-index: 2;
+  }
+
+  &__item-name {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: $title;
+  }
+
+  &__item-skill {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+}

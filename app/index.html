@@ -1,17 +1,145 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BizTo</title>
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
+<header class="header">
+    <div class="container">
+        <nav class="menu">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="images/logo.png" alt="logo" />
+            </a>
+            <ul class="menu__items">
+                <li class="menu__item">
+                    <a class="menu__item-link" href="#"> Home </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="#"> Pages </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="#"> Shortcodes </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="#"> Shop </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+
+    <section class="intro" style="background-image: url('images/top-bg.jpg');">
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="title">
+                Our Latest Portfolio
+            </h2>
+            <p class="description">
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout..
+            </p>
+            <ul class="portfolio__filter-items">
+
+                <li class="portfolio__filter-item">
+                    <button class="portfolio__filter-btn" type="button">
+                        All
+                    </button>
+                </li>
+                <li class="portfolio__filter-item">
+                    <button class="portfolio__filter-btn" type="button">
+                        Branding
+                    </button>
+                </li>
+                <li class="portfolio__filter-item">
+                    <button class="portfolio__filter-btn" type="button">
+                        Web Design
+                    </button>
+                </li>
+                <li class="portfolio__filter-item">
+                    <button class="portfolio__filter-btn" type="button">
+                        Mobile App
+                    </button>
+                </li>
+                <li class="portfolio__filter-item">
+                    <button class="portfolio__filter-btn" type="button">
+                        Photography
+                    </button>
+                </li>
+            </ul>
+            <ul class="portfolio__items">
+                <div class="portfolio__item-left">
+                    <li class="portfolio__item">
+                        <img class="portfolio__item-img" width="360" height="235" src="images/portfolio/1.jpg" alt="portfolio img">
+                    </li>
+                    <li class="portfolio__item">
+                        <img class="portfolio__item-img" width="360" height="366" src="images/portfolio/2.jpg" alt="portfolio img">
+                    </li>
+                </div>
+                <div class="portfolio__item-mid">
+                    <li class="portfolio__item">
+                        <img class="portfolio__item-img" width="360" height="366" src="images/portfolio/3.jpg" alt="portfolio img">
+                    </li>
+                    <li class="portfolio__item">
+                        <img class="portfolio__item-img" width="360" height="235" src="images/portfolio/4.jpg" alt="portfolio img">
+                    </li>
+                </div>
+                <div class="portfolio__item-right">
+                    <li class="portfolio__item">
+                        <img class="portfolio__item-img" width="360" height="235" src="images/portfolio/5.jpg" alt="portfolio img">
+                    </li>
+                    <li class="portfolio__item">
+                        <img class="portfolio__item-img" width="360" height="366" src="images/portfolio/6.jpg" alt="portfolio img">
+                    </li>
+                </div>
+            </ul>
+            <button class="portfolio__btn" type="button">check out more portfolio</button>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <h2 class="title">
+                Our Team Members
+            </h2>
+            <p class="description">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..
+            </p>
+            <ul class="team__items">
+                <li class="team__item">
+                    <img class="team__item-img" src="images/team/1.jpg" alt="pic of member">
+                    <div class="team__item-content">
+                    <h4 class="team__item-name">M_Adnan Arif</h4>
+                    <p class="team__item-skill">CEO Founder</p>
+                    </div>
+                </li>
+                <li class="team__item">
+                    <img class="team__item-img" src="images/team/2.jpg" alt="pic of member">
+                    <div class="team__item-content">
+                    <h4 class="team__item-name">Adnan Arif</h4>
+                    <p class="team__item-skill">Web Designer</p>
+                    </div>
+                </li>
+                <li class="team__item">
+                    <img class="team__item-img" src="images/team/3.jpg" alt="pic of member">
+                    <div class="team__item-content">
+                    <h4 class="team__item-name">Ali Jaun</h4>
+                    <p class="team__item-skill">Web Developer</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+<footer class="footer"></footer>
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
-    <script src='js/index.min.js'></script>
+<script src="js/index.min.js"></script>
 </body>
-
 </html>
