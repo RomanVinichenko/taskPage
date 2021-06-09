@@ -1,5 +1,6 @@
 .portfolio {
   padding: 130px 0;
+  background-color: $bg;
 
   &__title {
     font-weight: 500;
@@ -9,6 +10,7 @@
     margin-bottom: 40px;
     color: $title;
   }
+
   &__descr {
     font-size: 18px;
     line-height: 1.7;
@@ -17,15 +19,55 @@
     margin: 0 auto;
     margin-bottom: 35px;
   }
+
   &__filter-items {
     display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 
   &__filter-item {
-    border: none;
-    background-color: $wh;
+    margin: 0 8px;
   }
 
-  &__filter-btn
+  &__filter-btn {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    color: $btn;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $title;
+    }
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item-left,
+  &__item-mid,
+  &__item-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-left {
+    margin-right: 15px;
+  }
+  &__item-mid {
+    margin: 0 15px;
+  }
+  &__item-right {
+    margin-left: 15px;
+  }
 
 }
