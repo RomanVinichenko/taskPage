@@ -1,33 +1,70 @@
 body {
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0;
-    background-color: $wh;
-    color: $default;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0;
+  color: $default;
+  background-color: $wh;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 10px;
-    max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1150px;
 }
 
 .title {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 33px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: $title;
+  position: relative;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 33px;
+  text-align: center;
+  color: $title;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -18px;
+    margin: 0 auto;
+    width: 30px;
+    height: 1px;
+    background: $title;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    margin: 0 auto;
+    width: 50px;
+    height: 1px;
+    background: $title;
+  }
+}
+
+.hr {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -17px;
+  margin: 0 auto;
+  width: 1px;
+  height: 10px;
+  border: none;
+  background: $title;
 }
 
 .description {
-    font-size: 18px;
-    line-height: 1.7;
-    text-align: center;
-    width: 730px;
-    margin: 0 auto;
-    margin-bottom: 35px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 730px;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
 }

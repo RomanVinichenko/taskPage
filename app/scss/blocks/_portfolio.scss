@@ -1,6 +1,7 @@
 .portfolio {
   padding: 130px 0;
   background-color: $bg-light;
+
   &__filter-items {
     display: flex;
     justify-content: center;
@@ -13,11 +14,11 @@
 
   &__filter-btn {
     border: none;
-    background-color: transparent;
     font-weight: 600;
     color: $btn;
-    cursor: pointer;
+    background-color: transparent;
     transition: color 0.3s;
+    cursor: pointer;
 
     &:hover {
       color: $title;
@@ -35,13 +36,6 @@
     }
   }
 
-  &__item-left,
-  &__item-mid,
-  &__item-right {
-    display: flex;
-    flex-direction: column;
-  }
-
   &__item-left {
     margin-right: 15px;
   }
@@ -54,23 +48,117 @@
     margin-left: 15px;
   }
 
-  &__btn {
+  &__item-box {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      .portfolio__item-nav {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__item-link {
+    margin-bottom: 18px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__item-search {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__item-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0;
+    padding: 20px;
+    transform: translateY(-40px);
+    transition: all 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 0;
+      height: 6px;
+      background: $accent;
+      transition: width 0.3s linear;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 18px;
     text-transform: uppercase;
-    border: none;
-    background-color: $dark;
+    text-align: center;
     color: $wh;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 15px 40px;
-    margin: 0 auto;
+  }
+
+  &__item-subtitle {
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    color: $wh;
+  }
+
+  &__btn {
     display: block;
-    cursor: pointer;
+    margin: 0 auto;
+    padding: 15px 40px;
+    border: none;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $wh;
+    background-color: $dark;
     transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
 
     &:hover {
       background-color: $accent;
     }
-
   }
 
+  &__item-left,
+  &__item-mid,
+  &__item-right {
+    display: flex;
+    flex-direction: column;
+  }
 }
