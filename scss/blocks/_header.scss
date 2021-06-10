@@ -20,21 +20,22 @@
     }
 
     &__item-link {
+      position: relative;
       display: block;
       padding: 42px 0;
-      position: relative;
 
       &::before {
         content: "";
         position: absolute;
         left: 0;
         bottom: 0;
-        height: 2px;
         width: 0;
-        background: #000;
+        height: 2px;
+        background: $bl;
         transition: width 0.3s linear;
       }
-      &:hover::before{
+
+      &:hover::before {
         width: 100%;
       }
     }

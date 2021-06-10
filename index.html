@@ -1,110 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BizTo</title>
-    <link rel="stylesheet" href="css/style.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizTo</title>
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
 <header class="header">
-    <div class="container">
-        <nav class="menu">
-            <a class="header__logo" href="#">
-                <img class="header__logo-img" src="images/logo.png" alt="logo" />
-            </a>
-            <ul class="menu__items">
-                <li class="menu__item">
-                    <a class="menu__item-link" href="#"> Home </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__item-link" href="#"> Pages </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__item-link" href="#"> Shortcodes </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__item-link" href="#"> Shop </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+  <div class="container">
+    <nav class="menu">
+      <a class="header__logo" href="#">
+        <img class="header__logo-img" src="images/logo.png" alt="logo" />
+      </a>
+      <ul class="menu__items">
+        <li class="menu__item">
+          <a class="menu__item-link" href="#"> Home </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item-link" href="#"> Pages </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item-link" href="#"> Shortcodes </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item-link" href="#"> Shop </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main class="main">
+  <section class="intro" style="background-image: url('images/top-bg.jpg')"></section>
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="title">Our Latest Portfolio
+        <hr class="hr">
+      </h2>
 
-    <section class="intro" style="background-image: url('images/top-bg.jpg');">
-    </section>
-    <section class="portfolio">
-        <div class="container">
-            <h2 class="portfolio__title">
-                Our Latest Portfolio
-            </h2>
-            <p class="portfolio__descr">
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout..
-            </p>
-            <ul class="portfolio__filter-items">
+      <p class="description">
+        It is a long established fact that a reader will be distracted by the readable content
+        of a page when looking at its layout..
+      </p>
+      <ul class="portfolio__filter-items">
+        <li class="portfolio__filter-item">
+          <button class="portfolio__filter-btn" type="button" data-filter="all">All</button>
+        </li>
+        <li class="portfolio__filter-item">
+          <button class="portfolio__filter-btn" type="button" data-filter=".branding">Branding</button>
+        </li>
+        <li class="portfolio__filter-item">
+          <button class="portfolio__filter-btn" type="button" data-filter=".web">Web Design</button>
+        </li>
+        <li class="portfolio__filter-item">
+          <button class="portfolio__filter-btn" type="button" data-filter=".mobile">Mobile App</button>
+        </li>
+        <li class="portfolio__filter-item">
+          <button class="portfolio__filter-btn" type="button" data-filter=".photography">Photography</button>
+        </li>
+      </ul>
 
-                <li class="portfolio__filter-item">
-                    <button class="portfolio__filter-btn" type="button">
-                        All
-                    </button>
-                </li>
-                <li class="portfolio__filter-item">
-                    <button class="portfolio__filter-btn" type="button">
-                        Branding
-                    </button>
-                </li>
-                <li class="portfolio__filter-item">
-                    <button class="portfolio__filter-btn" type="button">
-                        Web Design
-                    </button>
-                </li>
-                <li class="portfolio__filter-item">
-                    <button class="portfolio__filter-btn" type="button">
-                        Mobile App
-                    </button>
-                </li>
-                <li class="portfolio__filter-item">
-                    <button class="portfolio__filter-btn" type="button">
-                        Photography
-                    </button>
-                </li>
-            </ul>
-            <ul class="portfolio__items">
-                <div class="portfolio__item-left">
-                    <li class="portfolio__item">
-                        <img class="portfolio__item-img" width="360" height="235" src="images/portfolio/1.jpg" alt="portfolio img">
-                    </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__item-img" width="360" height="366" src="images/portfolio/2.jpg" alt="portfolio img">
-                    </li>
-                </div>
-                <div class="portfolio__item-mid">
-                    <li class="portfolio__item">
-                        <img class="portfolio__item-img" width="360" height="366" src="images/portfolio/3.jpg" alt="portfolio img">
-                    </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__item-img" width="360" height="235" src="images/portfolio/4.jpg" alt="portfolio img">
-                    </li>
-                </div>
-                <div class="portfolio__item-right">
-                    <li class="portfolio__item">
-                        <img class="portfolio__item-img" width="360" height="235" src="images/portfolio/5.jpg" alt="portfolio img">
-                    </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__item-img" width="360" height="366" src="images/portfolio/6.jpg" alt="portfolio img">
-                    </li>
-                </div>
-            </ul>
+      <ul class="portfolio__items">
+        <div class="portfolio__item-left">
+
+          <li class="mix branding portfolio__item">
+            <div class="portfolio__item-box">
+              <img
+                class="portfolio__item-img"
+                width="360"
+                height="235"
+                src="images/portfolio/1.jpg"
+                alt="portfolio img"
+              />
+              <div class="portfolio__item-nav">
+                <a class="portfolio__item-link" href="#">
+                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                </a>
+                <a class="portfolio__item-direct" href="#">
+                  <h4 class="portfolio__item-title">Creative Design Layout</h4>
+                </a>
+                <span class="portfolio__item-subtitle">Design & Fun</span>
+              </div>
+            </div>
+          </li>
+          <li class="mix web portfolio__item">
+            <div class="portfolio__item-box">
+              <img
+                class="portfolio__item-img"
+                width="360"
+                height="366"
+                src="images/portfolio/2.jpg"
+                alt="portfolio img"
+              />
+              <div class="portfolio__item-nav">
+                <a class="portfolio__item-link" href="#">
+                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                </a>
+                <a class="portfolio__item-direct" href="#">
+                  <h4 class="portfolio__item-title">Creative Design Layout</h4>
+                </a>
+                <span class="portfolio__item-subtitle">Photography</span>
+              </div>
+            </div>
+          </li>
+
         </div>
-    </section>
 
+        <div class="portfolio__item-mid">
+
+          <li class="mix web portfolio__item">
+            <div class="portfolio__item-box">
+              <img
+                class="portfolio__item-img"
+                width="360"
+                height="366"
+                src="images/portfolio/3.jpg"
+                alt="portfolio img"
+              />
+              <div class="portfolio__item-nav">
+                <a class="portfolio__item-link" href="#">
+                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                </a>
+                <a class="portfolio__item-direct" href="#">
+                  <h4 class="portfolio__item-title">Creative Design Layout</h4>
+                </a>
+                <span class="portfolio__item-subtitle">Photoshop</span>
+              </div>
+            </div>
+          </li>
+          <li class="mix mobile portfolio__item">
+            <div class="portfolio__item-box">
+              <img
+                class="portfolio__item-img"
+                width="360"
+                height="235"
+                src="images/portfolio/4.jpg"
+                alt="portfolio img"
+              />
+              <div class="portfolio__item-nav">
+                <a class="portfolio__item-link" href="#">
+                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                </a>
+                <a class="portfolio__item-direct" href="#">
+                  <h4 class="portfolio__item-title">Creative Design Layout</h4>
+                </a>
+                <span class="portfolio__item-subtitle">Photography</span>
+              </div>
+            </div>
+          </li>
+
+        </div>
+
+        <div class="portfolio__item-right">
+
+          <li class="mix photography portfolio__item">
+            <div class="portfolio__item-box">
+              <img
+                class="portfolio__item-img"
+                width="360"
+                height="235"
+                src="images/portfolio/5.jpg"
+                alt="portfolio img"
+              />
+              <div class="portfolio__item-nav">
+                <a class="portfolio__item-link" href="#">
+                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                </a>
+                <a class="portfolio__item-direct" href="#">
+                  <h4 class="portfolio__item-title">Back to school</h4>
+                </a>
+                <span class="portfolio__item-subtitle">Fashion & Style</span>
+              </div>
+            </div>
+          </li>
+          <li class="mix web portfolio__item">
+            <div class="portfolio__item-box">
+              <img
+                class="portfolio__item-img"
+                width="360"
+                height="366"
+                src="images/portfolio/6.jpg"
+                alt="portfolio img"
+              />
+              <div class="portfolio__item-nav">
+                <a class="portfolio__item-link" href="#">
+                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                </a>
+                <a class="portfolio__item-direct" href="#">
+                  <h4 class="portfolio__item-title">Creative Design Layout</h4>
+                </a>
+                <span class="portfolio__item-subtitle">Interior</span>
+              </div>
+            </div>
+          </li>
+
+        </div>
+      </ul>
+      <button class="portfolio__btn" type="button">check out more portfolio</button>
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="container">
+      <h2 class="title">Our Team Members
+        <hr class="hr">
+      </h2>
+
+      <p class="description">
+        It is a long established fact that a reader will be distracted by the readable content
+        of a page when looking at its layout..
+      </p>
+      <ul class="team__items">
+        <li class="team__item">
+          <div class="team__item-pic">
+            <img class="team__item-img" src="images/team/1.jpg" alt="pic of member" />
+            <div class="team__item-nav">
+              <div class="team__item-links">
+                <a class="team__item-link" href="#">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a class="team__item-link" href="#">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#twitter"></use>
+                  </svg>
+                </a>
+                <a class="team__item-link" href="#">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#behance"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="team__item-content">
+            <h4 class="team__item-name">M_Adnan Arif</h4>
+            <p class="team__item-skill">CEO Founder</p>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__item-pic">
+            <img class="team__item-img" src="images/team/2.jpg" alt="pic of member" />
+            <div class="team__item-nav">
+              <p class="team__item-text">
+                It is a long established fact that a reader will be distracted
+              </p>
+              <div class="team__item-links">
+                <a class="team__item-link" href="#">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a class="team__item-link" href="#">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#twitter"></use>
+                  </svg>
+                </a>
+                <a class="team__item-link" href="#">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#behance"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="team__item-content">
+            <h4 class="team__item-name">Adnan Arif</h4>
+            <p class="team__item-skill">Web Designer</p>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__item-pic">
+            <img class="team__item-img" src="images/team/3.jpg" alt="pic of member" />
+            <div class="team__item-nav">
+              <div class="team__item-links">
+                <a class="team__item-link" href="#">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a class="team__item-link" href="#">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#twitter"></use>
+                  </svg>
+                </a>
+                <a class="team__item-link" href="#">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#behance"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="team__item-content">
+            <h4 class="team__item-name">Ali Jaun</h4>
+            <p class="team__item-skill">Web Developer</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 </main>
 <footer class="footer"></footer>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
 <script src="js/index.min.js"></script>
 </body>
 </html>
