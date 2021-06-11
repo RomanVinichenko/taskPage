@@ -16,7 +16,7 @@
       </a>
       <ul class="menu__items">
         <li class="menu__item">
-          <a class="menu__item-link" href="#"> Home </a>
+          <a class="menu__item-link menu--active" href="#"> Home </a>
         </li>
         <li class="menu__item">
           <a class="menu__item-link" href="#"> Pages </a>
@@ -32,7 +32,49 @@
   </div>
 </header>
 <main class="main">
-  <section class="intro" style="background-image: url('images/top-bg.jpg')"></section>
+  <section class="intro" style="background-image: url('images/top-bg.jpg')">
+    <div class="container">
+      <div class="intro__inner swiper-container">
+
+        <div class="intro__inner-wrapper swiper-wrapper">
+
+          <div class="intro__item swiper-slide">
+            <h1 class="intro__title">
+              Creative - Minemal - Clean
+            </h1>
+            <p class="intro__subtitle">
+              Multipurpose html Template
+            </p>
+            <p class="intro__text">
+              Well Layered and ready to use
+            </p>
+            <a class="intro__link" href="#">Contact Now</a>
+          </div>
+
+          <div class="intro__item swiper-slide">
+            <h1 class="intro__title">
+              Creative - Clean
+            </h1>
+            <p class="intro__subtitle">
+              Multipurpose html Template
+            </p>
+            <p class="intro__text">
+              Well Layered and ready to use
+            </p>
+            <a class="intro__link" href="#">Contact Now</a>
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+
+      </div>
+    </div>
+  </section>
+
   <section class="portfolio">
     <div class="container">
       <h2 class="title">Our Latest Portfolio
@@ -304,6 +346,8 @@
   </section>
 </main>
 <footer class="footer"></footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script src="js/index.min.js"></script>
 </body>
