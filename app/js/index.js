@@ -1,18 +1,3 @@
-const swiper = new Swiper('.swiper-container', {
-  // loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
 const filterBox = document.querySelectorAll('.portfolio__item');
 
 document.querySelector('.portfolio__filter-items').addEventListener('click', (event) => {
@@ -27,4 +12,19 @@ document.querySelector('.portfolio__filter-items').addEventListener('click', (ev
       elem.classList.add('hide');
     }
   });
+});
+
+const swiper = new Swiper('.swiper-container', {
+  // loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
 });
