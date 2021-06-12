@@ -3,9 +3,19 @@
   padding: 130px 0;
   background-color: $bg-dark;
 
+  @include r(500) {
+    padding: 40px 0;
+  }
+
   &__items {
     display: flex;
     justify-content: space-between;
+    @include r(1190){
+      justify-content: space-around;
+    }
+    @include r(800){
+      flex-wrap: wrap;
+    }
   }
 
   &__item-pic {
@@ -17,6 +27,11 @@
     width: 100%;
     max-width: 360px;
     overflow: hidden;
+
+    @include r(1190){
+      margin-right: 10px;
+    }
+
 
     &:hover {
       .team__item-img {

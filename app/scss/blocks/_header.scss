@@ -6,6 +6,13 @@
   z-index: 2;
   background-color: $wh;
 
+  &__logo-img {
+    @include r(480) {
+      width: 75px;
+      height: 28px;
+    }
+  }
+
   .menu {
     display: flex;
     align-items: center;
@@ -18,6 +25,10 @@
     &__item {
       margin-right: 30px;
       font-weight: 600;
+
+      @include r(480) {
+        margin-right: 8px;
+      }
     }
 
     &__item-link {
@@ -25,6 +36,11 @@
       display: block;
       padding: 42px 0;
       color: $title;
+
+      @include r(480) {
+        padding: 20px 0;
+        font-size: 12px;
+      }
 
       &::before {
         content: "";

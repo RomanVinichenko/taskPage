@@ -21,12 +21,12 @@
     animation-timing-function: linear;
     animation-iteration-count: 3;
 
-    //@include r(750) {
-    //  font-size: 36px;
-    //}
-    //@include r(480) {
-    //  font-size: 24px;
-    //}
+    @include r(750) {
+      font-size: 36px;
+    }
+    @include r(480) {
+      font-size: 24px;
+    }
   }
 
   &__subtitle {
@@ -36,12 +36,12 @@
     line-height: 1.4;
     color: $title;
 
-    //@include r(750) {
-    //  font-size: 26px;
-    //}
-    //@include r(480) {
-    //  font-size: 18px;
-    //}
+    @include r(750) {
+      font-size: 26px;
+    }
+    @include r(480) {
+      font-size: 18px;
+    }
   }
 
   &__text {

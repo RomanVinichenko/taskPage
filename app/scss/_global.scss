@@ -23,6 +23,10 @@ body {
   text-align: center;
   color: $title;
 
+  @include r(500){
+    font-size: 25px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -63,10 +67,16 @@ body {
 .description {
   margin: 0 auto;
   margin-bottom: 35px;
-  width: 730px;
+  max-width: 730px;
+  padding: 0 30px;
   font-size: 18px;
   line-height: 1.7;
   text-align: center;
+
+  @include r(550) {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
 }
 
 .hide {
