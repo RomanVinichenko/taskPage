@@ -1,11 +1,14 @@
 .intro {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  &__inner {
-    padding-top: 100px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   &__title {
@@ -17,6 +20,13 @@
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 3;
+
+    //@include r(750) {
+    //  font-size: 36px;
+    //}
+    //@include r(480) {
+    //  font-size: 24px;
+    //}
   }
 
   &__subtitle {
@@ -25,6 +35,13 @@
     font-size: 36px;
     line-height: 1.4;
     color: $title;
+
+    //@include r(750) {
+    //  font-size: 26px;
+    //}
+    //@include r(480) {
+    //  font-size: 18px;
+    //}
   }
 
   &__text {
@@ -36,11 +53,18 @@
   }
 
   &__link {
-    padding: 15px 42px;
+    padding: 15px 40px;
     font-weight: 700;
+    font-size: 12px;
     text-transform: uppercase;
     color: #010101;
     background-color: #f2b632;
+    transition: all 0.4s ease-in-out 0s;
+
+    &:hover {
+      color: #fff;
+      background: #252839;
+    }
   }
 
   @keyframes smooth-text {

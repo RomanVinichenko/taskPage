@@ -14,7 +14,7 @@ document.querySelector('.portfolio__filter-items').addEventListener('click', (ev
   });
 });
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.intro__inner', {
   // loop: true,
 
   pagination: {
