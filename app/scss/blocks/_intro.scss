@@ -22,9 +22,10 @@
     animation-iteration-count: 3;
 
     @include r(750) {
-      font-size: 36px;
       padding: 0 20px;
+      font-size: 36px;
     }
+
     @include r(480) {
       font-size: 24px;
     }
@@ -40,6 +41,7 @@
     @include r(750) {
       font-size: 26px;
     }
+
     @include r(480) {
       font-size: 18px;
     }
@@ -79,48 +81,47 @@
   }
 }
 
-.swiper-button-next{
+.swiper-button-next {
+  left: auto;
+  right: 0;
   width: 50px;
   height: 50px;
   background-color: $wh;
-  right: 0px;
-  left: auto;
 
   &::after {
-    color: #ccc;
     font-size: 24px;
-
-
-}
+    color: #ccc;
+  }
 
   @include r(870) {
-    top: 56%
+    top: 56%;
   }
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
+  left: 0;
+  right: auto;
   width: 50px;
   height: 50px;
   background-color: $wh;
-  left: 0;
-  right: auto;
 
   &::after {
-    color: #ccc;
     font-size: 24px;
-}
+    color: #ccc;
+  }
+
   @include r(870) {
     top: 56%;
   }
 }
 
 .swiper-pagination-bullet {
-  background-color:$bl;
+  position: relative;
+  padding: 7px;
   width: 10px;
   height: 10px;
+  background-color: $bl;
   cursor: pointer;
-  padding: 7px;
-  position: relative;
 
   &:hover {
     background-color: rgba($bl, 0.7);
@@ -133,12 +134,12 @@
   &::after {
     content: "";
     position: absolute;
+    left: 50%;
+    top: 50%;
     width: 6px;
     height: 6px;
-    background-color: $wh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 50%;
+    background-color: $wh;
+    transform: translate(-50%, -50%);
   }
 }

@@ -16,10 +16,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: rgba(255, 255, 255, 0.8);
 
-    @include r(800){
-      margin: 0 auto;
-    }
-
     &__label {
       display: block;
       margin-bottom: 15px;
@@ -52,7 +48,7 @@
       }
     }
 
-    &__field-date {
+    &__date {
       width: 31%;
       background-image: url("../../images/download.svg");
     }
@@ -62,12 +58,12 @@
       justify-content: space-between;
     }
 
-    &__field-person {
+    &__person {
       width: 100%;
       background-image: url("../../images/download.svg");
     }
 
-    &__field-username {
+    &__username {
       width: 100%;
       transition: border-color 0.15s linear, background 0.15s linear;
     }
@@ -90,7 +86,7 @@
       color: $title;
     }
 
-    &__info-link {
+    &__link {
       text-decoration: underline;
       color: #663a88;
     }
@@ -115,13 +111,18 @@
       }
     }
 
-    &__info-email,
-    &__info-pass {
-      max-width: 220px;
-      width: 100%;
-    }
-    &__info-email {
+    &__email {
       margin-right: 10px;
+    }
+
+    &__email,
+    &__pass {
+      width: 100%;
+      max-width: 220px;
+    }
+
+    @include r(800) {
+      margin: 0 auto;
     }
   }
 }

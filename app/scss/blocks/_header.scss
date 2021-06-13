@@ -37,11 +37,6 @@
       padding: 42px 0;
       color: $title;
 
-      @include r(480) {
-        padding: 20px 0;
-        font-size: 12px;
-      }
-
       &::before {
         content: "";
         position: absolute;
@@ -55,6 +50,11 @@
 
       &:hover::before {
         width: 100%;
+      }
+
+      @include r(480) {
+        padding: 20px 0;
+        font-size: 12px;
       }
     }
 
