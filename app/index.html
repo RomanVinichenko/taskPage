@@ -392,15 +392,17 @@
     <div class="container">
       <h1 class="title sr-only" >Form</h1>
       <form class="form">
-        <label class="form__label" >Type of users:</label>
-        <select class="form__person field" >
-          <option value selected="selected" disabled>I am</option>
-          <option value="MAN">Man</option>
-          <option value="WOMAN">Woman</option>
-        </select>
-        <label class="form__label">Date of Birth:</label>
+        <label class="form__label" >Type of users:
+          <select class="form__person field" id="person">
+            <option value selected="selected" disabled>I am</option>
+            <option value="MAN">Man</option>
+            <option value="WOMAN">Woman</option>
+          </select>
+        </label>
+
+        <label class="form__label">Date of Birth:
         <div class="form__date-inner">
-          <select class="form__date field">
+          <select class="form__date field" id="day">
             <option value="Day">Day</option>
             <option value="1">01</option>
             <option value="2">02</option>
@@ -434,7 +436,7 @@
             <option value="30">30</option>
             <option value="31">31</option>
           </select>
-          <select class="form__date field">
+          <select class="form__date field" id="month">
             <option value="Month">Month</option>
             <option value="1">01</option>
             <option value="2">02</option>
@@ -449,7 +451,7 @@
             <option value="11">11</option>
             <option value="12">12</option>
           </select>
-          <select class="form__date field">
+          <select class="form__date field" id="year">
             <option value="Year">Year</option>
             <option value="2003" selected="selected">2003</option>
             <option value="2002">2002</option>
@@ -517,31 +519,40 @@
             <option value="1940">1940</option>
           </select>
         </div>
-        <label class="form__label" >Username:</label>
-        <input
-          class="form__username field"
-          type="text"
-          placeholder="Username"
-          required
-        />
+        </label>
+        <label class="form__label" >Username:
+          <input
+            class="form__username field"
+            type="text"
+            id="username"
+            placeholder="Username"
+            required
+          />
+        </label>
         <div class="form__info-inner">
           <div class="form__email">
-            <label class="form__label" >Email:</label>
-            <input
-              class="form__username field"
-              type="email"
-              placeholder="xxxx@xxxxx.xxx"
-              required
-            />
+            <label class="form__label" >Email:
+              <input
+                class="form__username field"
+                type="email"
+                id="email"
+                placeholder="xxxx@xxxxx.xxx"
+                required
+              />
+            </label>
+
           </div>
           <div class="form__pass">
-            <label class="form__label" >Password:</label>
-            <input
-              class="form__username field"
-              type="password"
-              placeholder="Password"
-              required
-            />
+            <label class="form__label" >Password:
+              <input
+                class="form__username field"
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+            </label>
+
           </div>
         </div>
         <div class="form__confirm">
