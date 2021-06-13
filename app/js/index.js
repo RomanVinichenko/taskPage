@@ -16,10 +16,13 @@ document.querySelector('.portfolio__filter-items').addEventListener('click', (ev
 
 const swiper = new Swiper('.intro__inner', {
   loop: true,
+  autoplay: true,
+  speed: 1000,
 
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -27,5 +30,14 @@ const swiper = new Swiper('.intro__inner', {
   },
   scrollbar: {
     el: '.swiper-scrollbar',
+  },
+
+  effect: 'cube',
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
   },
 });
