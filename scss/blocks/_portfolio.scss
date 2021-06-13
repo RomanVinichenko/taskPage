@@ -2,14 +2,27 @@
   padding: 130px 0;
   background-color: $bg-light;
 
+  @include r(500) {
+    padding: 40px 0;
+  }
+
   &__filter-items {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    @include r(500){
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+
+    }
   }
 
   &__filter-item {
     margin: 0 8px;
+    @include r(500){
+      margin-bottom: 20px;
+    }
   }
 
   &__filter-btn {
@@ -28,24 +41,70 @@
   &__items {
     display: flex;
     margin-bottom: 80px;
+    justify-content: center;
+
+    @include r(500) {
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+
+    }
   }
 
   &__item {
     &:first-child {
       margin-bottom: 30px;
+      @include r(650){
+        margin-bottom: 10px;
+
+      }
+    }
+  }
+
+  &__item-img {
+    @include r(1180){
+      width: 250px;
+      height: 200px;
+      object-fit: cover;
+    }
+    @include r(700){
+      width: 200px;
+      height: 150px;
+    }
+    @include r(500){
+      width: 315px;
+      height: 200px;
     }
   }
 
   &__item-left {
     margin-right: 15px;
+    @include r(650){
+      margin-right: 5px;
+    }
+    @include r(500){
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
   }
 
   &__item-mid {
     margin: 0 15px;
+    @include r(650){
+      margin: 0 5px;
+    }
+    @include r(500){
+      margin: 0 0 10px 0;
+    }
   }
 
   &__item-right {
     margin-left: 15px;
+    @include r(650) {
+      margin-left: 5px;
+    }
+    @include r(500) {
+      margin-left: 0;
+    }
   }
 
   &__item-box {
@@ -124,8 +183,8 @@
     margin-bottom: 5px;
     font-weight: 500;
     font-size: 18px;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
     color: $wh;
   }
 
@@ -153,6 +212,10 @@
     &:hover {
       background-color: $accent;
     }
+  }
+
+  &--active {
+    color: $title;
   }
 
   &__item-left,

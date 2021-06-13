@@ -3,3 +3,8 @@
     @content;
   }
 }
+
+//
+@include r(750) {
+  font-size: 26px;
+}

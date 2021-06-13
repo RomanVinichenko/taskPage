@@ -1,6 +1,144 @@
 .intro {
-  min-height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.5;
+    color: $title;
+    animation-name: smooth-text;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+
+    @include r(750) {
+      font-size: 36px;
+      padding: 0 20px;
+    }
+    @include r(480) {
+      font-size: 24px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.4;
+    color: $title;
+
+    @include r(750) {
+      font-size: 26px;
+    }
+    @include r(480) {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: $title;
+  }
+
+  &__link {
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #010101;
+    background-color: #f2b632;
+    transition: all 0.4s ease-in-out 0s;
+
+    &:hover {
+      color: #fff;
+      background: #252839;
+    }
+  }
+
+  @keyframes smooth-text {
+    0% {
+      display: none;
+    }
+
+    100% {
+      display: block;
+    }
+  }
+}
+
+.swiper-button-next{
+  width: 50px;
+  height: 50px;
+  background-color: $wh;
+  right: 0px;
+  left: auto;
+
+  &::after {
+    color: #ccc;
+    font-size: 24px;
+
+
+}
+
+  @include r(870) {
+    top: 56%
+  }
+}
+
+.swiper-button-prev{
+  width: 50px;
+  height: 50px;
+  background-color: $wh;
+  left: 0;
+  right: auto;
+
+  &::after {
+    color: #ccc;
+    font-size: 24px;
+}
+  @include r(870) {
+    top: 56%;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color:$bl;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  padding: 7px;
+  position: relative;
+
+  &:hover {
+    background-color: rgba($bl, 0.7);
+  }
+}
+
+.swiper-pagination-bullet-active {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: $wh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
 }
