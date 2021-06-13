@@ -8,25 +8,24 @@
 </head>
 
 <body>
-
 <header class="header">
   <div class="container">
     <nav class="menu">
-      <a class="header__logo" href="#">
+      <a class="header__logo" href="#" target="_blank">
         <img class="header__logo-img" src="images/logo.png" alt="logo" />
       </a>
       <ul class="menu__items">
         <li class="menu__item">
-          <a class="menu__item-link menu--active" href="#"> Home </a>
+          <a class="menu__item-link menu--active" href="#" target="_blank"> Home </a>
         </li>
         <li class="menu__item">
-          <a class="menu__item-link" href="#"> Pages </a>
+          <a class="menu__item-link" href="#" target="_blank"> Pages </a>
         </li>
         <li class="menu__item">
-          <a class="menu__item-link" href="#"> Shortcodes </a>
+          <a class="menu__item-link" href="#" target="_blank"> Shortcodes </a>
         </li>
         <li class="menu__item">
-          <a class="menu__item-link" href="#"> Shop </a>
+          <a class="menu__item-link" href="#" target="_blank"> Shop </a>
         </li>
       </ul>
     </nav>
@@ -34,66 +33,50 @@
 </header>
 
 <main class="main">
-
   <section class="intro">
-
-      <div class="intro__inner swiper-container">
-
-        <div class="intro__inner-wrapper swiper-wrapper">
-
-          <div class="intro__item swiper-slide" style="background-image: url('images/top-bg.jpg')">
-            <h1 class="intro__title">
-              Creative - Minimal - Clean
-            </h1>
-            <p class="intro__subtitle">
-              Multipurpose html Template
-            </p>
-            <p class="intro__text">
-              Well Layered and ready to use
-            </p>
-            <a class="intro__link" href="#">Contact Now</a>
-          </div>
-
-          <div class="intro__item swiper-slide" style="background-image: url('images/top-bg1.jpg')">
-            <h1 class="intro__title">
-              Creative Agency  & MultiConcept
-            </h1>
-            <p class="intro__subtitle">
-              Clean & Minimal Template
-            </p>
-            <p class="intro__text">
-              We are Based London - UK
-            </p>
-            <a class="intro__link" href="#">Contact Now</a>
-          </div>
-
-          <div class="intro__item swiper-slide" style="background-image: url('images/top-bg2.jpg')">
-            <h1 class="intro__title">
-              Welcome to Creative BIZTO
-            </h1>
-            <p class="intro__subtitle">
-              Creative Design & Online Marketing
-            </p>
-            <p class="intro__text">
-              We are Based in London - UK
-            </p>
-            <a class="intro__link" href="#">Contact Now</a>
-          </div>
-
+    <div class="intro__inner swiper-container">
+      <div class="intro__inner-wrapper swiper-wrapper">
+        <div
+          class="intro__item swiper-slide"
+          style="background-image: url('images/top-bg.jpg')"
+        >
+          <h2 class="intro__title">Creative - Minimal - Clean</h2>
+          <p class="intro__subtitle">Multipurpose html Template</p>
+          <p class="intro__text">Well Layered and ready to use</p>
+          <a class="intro__link" href="#">Contact Now</a>
         </div>
 
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div
+          class="intro__item swiper-slide"
+          style="background-image: url('images/top-bg1.jpg')"
+        >
+          <h2 class="intro__title">Creative Agency & MultiConcept</h2>
+          <p class="intro__subtitle">Clean & Minimal Template</p>
+          <p class="intro__text">We are Based London - UK</p>
+          <a class="intro__link" href="#">Contact Now</a>
+        </div>
 
+        <div
+          class="intro__item swiper-slide"
+          style="background-image: url('images/top-bg2.jpg')"
+        >
+          <h1 class="intro__title">Welcome to Creative BIZTO</h1>
+          <p class="intro__subtitle">Creative Design & Online Marketing</p>
+          <p class="intro__text">We are Based in London - UK</p>
+          <a class="intro__link" href="#">Contact Now</a>
+        </div>
       </div>
 
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </section>
 
   <section class="portfolio">
     <div class="container">
-      <h2 class="title">Our Latest Portfolio
-        <hr class="hr">
+      <h2 class="title">
+        Our Latest Portfolio
       </h2>
 
       <p class="description">
@@ -105,22 +88,29 @@
           <button class="portfolio__filter-btn" type="button" data-filter="all">All</button>
         </li>
         <li class="portfolio__filter-item">
-          <button class="portfolio__filter-btn" type="button" data-filter="branding">Branding</button>
+          <button class="portfolio__filter-btn" type="button" data-filter="branding">
+            Branding
+          </button>
         </li>
         <li class="portfolio__filter-item">
-          <button class="portfolio__filter-btn" type="button" data-filter="web">Web Design</button>
+          <button class="portfolio__filter-btn" type="button" data-filter="web">
+            Web Design
+          </button>
         </li>
         <li class="portfolio__filter-item">
-          <button class="portfolio__filter-btn" type="button" data-filter="mobile">Mobile App</button>
+          <button class="portfolio__filter-btn" type="button" data-filter="mobile">
+            Mobile App
+          </button>
         </li>
         <li class="portfolio__filter-item">
-          <button class="portfolio__filter-btn" type="button" data-filter="photography">Photography</button>
+          <button class="portfolio__filter-btn" type="button" data-filter="photography">
+            Photography
+          </button>
         </li>
       </ul>
 
-      <ul class="portfolio__items">
-        <div class="portfolio__item-left">
-
+      <div class="portfolio__items">
+        <ul class="portfolio__item-left">
           <li class="portfolio__item mix branding">
             <div class="portfolio__item-box">
               <img
@@ -131,10 +121,14 @@
                 alt="portfolio img"
               />
               <div class="portfolio__item-nav">
-                <a class="portfolio__item-link" href="#">
-                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                <a class="portfolio__item-link" href="#" target="_blank">
+                  <img
+                    class="portfolio__item-search"
+                    src="images/search.svg"
+                    alt="search link"
+                  />
                 </a>
-                <a class="portfolio__item-direct" href="#">
+                <a class="portfolio__item-direct" href="#" target="_blank">
                   <h4 class="portfolio__item-title">Creative Design Layout</h4>
                 </a>
                 <span class="portfolio__item-subtitle">Design & Fun</span>
@@ -151,21 +145,23 @@
                 alt="portfolio img"
               />
               <div class="portfolio__item-nav">
-                <a class="portfolio__item-link" href="#">
-                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                <a class="portfolio__item-link" href="#" target="_blank">
+                  <img
+                    class="portfolio__item-search"
+                    src="images/search.svg"
+                    alt="search link"
+                  />
                 </a>
-                <a class="portfolio__item-direct" href="#">
+                <a class="portfolio__item-direct" href="#" target="_blank">
                   <h4 class="portfolio__item-title">Creative Design Layout</h4>
                 </a>
                 <span class="portfolio__item-subtitle">Photography</span>
               </div>
             </div>
           </li>
+        </ul>
 
-        </div>
-
-        <div class="portfolio__item-mid">
-
+        <ul class="portfolio__item-mid">
           <li class="portfolio__item mix web">
             <div class="portfolio__item-box">
               <img
@@ -176,10 +172,14 @@
                 alt="portfolio img"
               />
               <div class="portfolio__item-nav">
-                <a class="portfolio__item-link" href="#">
-                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                <a class="portfolio__item-link" href="#" target="_blank">
+                  <img
+                    class="portfolio__item-search"
+                    src="images/search.svg"
+                    alt="search link"
+                  />
                 </a>
-                <a class="portfolio__item-direct" href="#">
+                <a class="portfolio__item-direct" href="#" target="_blank">
                   <h4 class="portfolio__item-title">Creative Design Layout</h4>
                 </a>
                 <span class="portfolio__item-subtitle">Photoshop</span>
@@ -196,21 +196,23 @@
                 alt="portfolio img"
               />
               <div class="portfolio__item-nav">
-                <a class="portfolio__item-link" href="#">
-                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                <a class="portfolio__item-link" href="#" target="_blank">
+                  <img
+                    class="portfolio__item-search"
+                    src="images/search.svg"
+                    alt="search link"
+                  />
                 </a>
-                <a class="portfolio__item-direct" href="#">
+                <a class="portfolio__item-direct" href="#" target="_blank">
                   <h4 class="portfolio__item-title">Creative Design Layout</h4>
                 </a>
                 <span class="portfolio__item-subtitle">Photography</span>
               </div>
             </div>
           </li>
+        </ul>
 
-        </div>
-
-        <div class="portfolio__item-right">
-
+        <ul class="portfolio__item-right">
           <li class="portfolio__item mix photography">
             <div class="portfolio__item-box">
               <img
@@ -221,10 +223,14 @@
                 alt="portfolio img"
               />
               <div class="portfolio__item-nav">
-                <a class="portfolio__item-link" href="#">
-                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                <a class="portfolio__item-link" href="#" target="_blank">
+                  <img
+                    class="portfolio__item-search"
+                    src="images/search.svg"
+                    alt="search link"
+                  />
                 </a>
-                <a class="portfolio__item-direct" href="#">
+                <a class="portfolio__item-direct" href="#" target="_blank">
                   <h4 class="portfolio__item-title">Back to school</h4>
                 </a>
                 <span class="portfolio__item-subtitle">Fashion & Style</span>
@@ -241,27 +247,30 @@
                 alt="portfolio img"
               />
               <div class="portfolio__item-nav">
-                <a class="portfolio__item-link" href="#">
-                  <img class="portfolio__item-search" src="images/search.svg" alt="search link">
+                <a class="portfolio__item-link" href="#" target="_blank">
+                  <img
+                    class="portfolio__item-search"
+                    src="images/search.svg"
+                    alt="search link"
+                  />
                 </a>
-                <a class="portfolio__item-direct" href="#">
+                <a class="portfolio__item-direct" href="#" target="_blank">
                   <h4 class="portfolio__item-title">Creative Design Layout</h4>
                 </a>
                 <span class="portfolio__item-subtitle">Interior</span>
               </div>
             </div>
           </li>
-
-        </div>
-      </ul>
+        </ul>
+      </div>
       <button class="portfolio__btn" type="button">check out more portfolio</button>
     </div>
   </section>
 
   <section class="team">
     <div class="container">
-      <h2 class="title">Our Team Members
-        <hr class="hr">
+      <h2 class="title">
+        Our Team Members
       </h2>
 
       <p class="description">
@@ -270,90 +279,109 @@
       </p>
       <ul class="team__items">
         <li class="team__item">
-          <div class="team__item-pic">
-            <img class="team__item-img" src="images/team/1.jpg" alt="pic of member" />
-            <div class="team__item-nav">
-              <div class="team__item-links">
-                <a class="team__item-link" href="#">
-                  <svg>
-                    <use xlink:href="images/sprites.svg#facebook"></use>
-                  </svg>
-                </a>
-                <a class="team__item-link" href="#">
-                  <svg>
-                    <use xlink:href="images/sprites.svg#twitter"></use>
-                  </svg>
-                </a>
-                <a class="team__item-link" href="#">
-                  <svg>
-                    <use xlink:href="images/sprites.svg#behance"></use>
-                  </svg>
-                </a>
-              </div>
+          <div class="team__pic">
+            <img class="team__img" src="images/team/1.jpg" alt="pic of member" />
+            <div class="team__nav">
+              <ul class="team__item-links">
+                <li class="team__item-link">
+                  <a class="team__link" href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team__item-link">
+                  <a class="team__link" href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team__item-link">
+                  <a class="team__link" href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#behance"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="team__item-content">
-            <h4 class="team__item-name">M_Adnan Arif</h4>
-            <p class="team__item-skill">CEO Founder</p>
+          <div class="team__content">
+            <h4 class="team__name">M_Adnan Arif</h4>
+            <p class="team__skill">CEO Founder</p>
           </div>
         </li>
         <li class="team__item">
-          <div class="team__item-pic">
-            <img class="team__item-img" src="images/team/2.jpg" alt="pic of member" />
-            <div class="team__item-nav">
+          <div class="team__pic">
+            <img class="team__img" src="images/team/2.jpg" alt="pic of member" />
+            <div class="team__nav">
               <p class="team__item-text">
                 It is a long established fact that a reader will be distracted
               </p>
-              <div class="team__item-links">
-                <a class="team__item-link" href="#">
+              <ul class="team__item-links">
+                <li class="team__item-link">
+                <a class="team__link" href="#" target="_blank">
                   <svg>
                     <use xlink:href="images/sprites.svg#facebook"></use>
                   </svg>
                 </a>
-                <a class="team__item-link" href="#">
+                </li>
+                <li class="team__item-link">
+                <a class="team__link" href="#" target="_blank">
                   <svg>
                     <use xlink:href="images/sprites.svg#twitter"></use>
                   </svg>
                 </a>
-                <a class="team__item-link" href="#">
+                </li>
+                <li class="team__item-link">
+                <a class="team__link" href="#" target="_blank">
                   <svg>
                     <use xlink:href="images/sprites.svg#behance"></use>
                   </svg>
                 </a>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="team__item-content">
-            <h4 class="team__item-name">Adnan Arif</h4>
-            <p class="team__item-skill">Web Designer</p>
+          <div class="team__content">
+            <h4 class="team__name">Adnan Arif</h4>
+            <p class="team__skill">Web Designer</p>
           </div>
         </li>
         <li class="team__item">
-          <div class="team__item-pic">
-            <img class="team__item-img" src="images/team/3.jpg" alt="pic of member" />
-            <div class="team__item-nav">
-              <div class="team__item-links">
-                <a class="team__item-link" href="#">
+          <div class="team__pic">
+            <img class="team__img" src="images/team/3.jpg" alt="pic of member" />
+            <div class="team__nav">
+              <ul class="team__item-links">
+                <li class="team__item-link">
+                <a class="team__link" href="#" target="_blank">
                   <svg>
                     <use xlink:href="images/sprites.svg#facebook"></use>
                   </svg>
                 </a>
-                <a class="team__item-link" href="#">
+                </li>
+                <li class="team__item-link">
+                <a class="team__link" href="#" target="_blank">
                   <svg>
                     <use xlink:href="images/sprites.svg#twitter"></use>
                   </svg>
                 </a>
-                <a class="team__item-link" href="#">
+                </li>
+                <li class="team__item-link">
+                <a class="team__link" href="#" target="_blank">
                   <svg>
                     <use xlink:href="images/sprites.svg#behance"></use>
                   </svg>
                 </a>
-              </div>
+                </li>
+
+              </ul>
             </div>
           </div>
-          <div class="team__item-content">
-            <h4 class="team__item-name">Ali Jaun</h4>
-            <p class="team__item-skill">Web Developer</p>
+          <div class="team__content">
+            <h4 class="team__name">Ali Jaun</h4>
+            <p class="team__skill">Web Developer</p>
           </div>
         </li>
       </ul>
@@ -362,16 +390,17 @@
 
   <section class="contact-form" style="background-image: url('images/form-bg.jpg')">
     <div class="container">
+      <h1 class="title sr-only" >Form</h1>
       <form class="form">
-        <label class="form__label" for="select-person">Type of users:</label>
-        <select class="form__field-person field" id="select-person">
-          <option value selected="selected">I am</option>
+        <label class="form__label" >Type of users:</label>
+        <select class="form__person field" >
+          <option value selected="selected" disabled>I am</option>
           <option value="MAN">Man</option>
           <option value="WOMAN">Woman</option>
         </select>
-        <label class="form__label" for="select__date">Date of Birth:</label>
-        <div class="form__date-inner" id="select__date">
-          <select class="form__field-date field">
+        <label class="form__label">Date of Birth:</label>
+        <div class="form__date-inner">
+          <select class="form__date field">
             <option value="Day">Day</option>
             <option value="1">01</option>
             <option value="2">02</option>
@@ -405,7 +434,7 @@
             <option value="30">30</option>
             <option value="31">31</option>
           </select>
-          <select class="form__field-date field">
+          <select class="form__date field">
             <option value="Month">Month</option>
             <option value="1">01</option>
             <option value="2">02</option>
@@ -420,7 +449,7 @@
             <option value="11">11</option>
             <option value="12">12</option>
           </select>
-          <select class="form__field-date field">
+          <select class="form__date field">
             <option value="Year">Year</option>
             <option value="2003" selected="selected">2003</option>
             <option value="2002">2002</option>
@@ -488,43 +517,55 @@
             <option value="1940">1940</option>
           </select>
         </div>
-        <label class="form__label" for="select__username">Username:</label>
-        <input class="form__field-username field" id="select__username" type="text" placeholder="Username" required>
+        <label class="form__label" >Username:</label>
+        <input
+          class="form__username field"
+          type="text"
+          placeholder="Username"
+          required
+        />
         <div class="form__info-inner">
-          <div class="form__info-email">
-            <label class="form__label" for="input__email">Email:</label>
-            <input class="form__field-username field" id="input__email" type="email" placeholder="xxxx@xxxxx.xxx"
-                   required>
+          <div class="form__email">
+            <label class="form__label" >Email:</label>
+            <input
+              class="form__field-username field"
+              type="email"
+              placeholder="xxxx@xxxxx.xxx"
+              required
+            />
           </div>
-          <div class="form__info-pass">
-            <label class="form__label" for="input__pass">Password:</label>
-            <input class="form__field-username field" id="input__pass" type="password" placeholder="Password" required>
-
+          <div class="form__pass">
+            <label class="form__label" >Password:</label>
+            <input
+              class="form__field-username field"
+              type="password"
+              placeholder="Password"
+              required
+            />
           </div>
         </div>
         <div class="form__confirm">
-          <input class="form__confirm" type="checkbox" id="terms">
-          <label class="form__label-confirm" for="terms">I confirm that I am over 18 years old and have read the <a
-            class="form__info-link" href="#">Terms of Use</a>.</label>
+          <input class="form__input" type="checkbox"  />
+          <label class="form__label-confirm"
+          >I confirm that I am over 18 years old and have read the
+            <a class="form__link" href="#">Terms of Use</a>.</label
+          >
         </div>
         <div class="form__confirm">
-          <input class="form__confirm" type="checkbox" id="policy">
-          <label class="form__label-confirm" for="policy">By marking this checkbox I agree to lovehostages.com <a
-            class="form__info-link" href="#">Privacy Policy</a>.</label>
+          <input class="form__input" type="checkbox"  />
+          <label class="form__label-confirm"
+          >By marking this checkbox I agree to lovehostages.com
+            <a class="form__link" href="#">Privacy Policy</a>.</label
+          >
         </div>
         <button class="form__btn" type="submit">Free Registration</button>
       </form>
     </div>
   </section>
-
 </main>
-
-<footer class="footer"></footer>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script src="js/index.min.js"></script>
-
 </body>
-
 </html>

@@ -3,22 +3,20 @@
   padding: 130px 0;
   background-color: $bg-dark;
 
-  @include r(500) {
-    padding: 40px 0;
-  }
-
   &__items {
     display: flex;
     justify-content: space-between;
-    @include r(1190){
+
+    @include r(1190) {
       justify-content: space-around;
     }
-    @include r(800){
+
+    @include r(800) {
       flex-wrap: wrap;
     }
   }
 
-  &__item-pic {
+  &__pic {
     position: relative;
     overflow: hidden;
   }
@@ -28,23 +26,22 @@
     max-width: 360px;
     overflow: hidden;
 
-    @include r(1190){
-      margin-right: 10px;
-    }
-
-
     &:hover {
-      .team__item-img {
+      .team__img {
         transform: scale(1.1);
       }
 
-      .team__item-nav {
+      .team__nav {
         opacity: 1;
       }
     }
+
+    @include r(1190) {
+      margin-right: 10px;
+    }
   }
 
-  &__item-img {
+  &__img {
     width: 360px;
     height: 368px;
     object-fit: cover;
@@ -61,7 +58,7 @@
     color: $wh;
   }
 
-  &__item-nav {
+  &__nav {
     position: absolute;
     left: 0;
     right: 0;
@@ -81,6 +78,12 @@
   }
 
   &__item-link {
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,10 +102,6 @@
       transition: fill 0.5s;
     }
 
-    &:not(:last-child) {
-      margin-right: 6px;
-    }
-
     &:hover {
       background-color: $wh;
 
@@ -112,12 +111,12 @@
     }
   }
 
-  &__item-content {
+  &__content {
     padding: 25px;
     text-align: center;
   }
 
-  &__item-name {
+  &__name {
     margin-bottom: 8px;
     font-weight: 700;
     font-size: 16px;
@@ -125,8 +124,12 @@
     color: $title;
   }
 
-  &__item-skill {
+  &__skill {
     font-weight: 500;
     font-size: 14px;
+  }
+
+  @include r(500) {
+    padding: 40px 0;
   }
 }

@@ -2,25 +2,21 @@
   padding: 130px 0;
   background-color: $bg-light;
 
-  @include r(500) {
-    padding: 40px 0;
-  }
-
   &__filter-items {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 
-    @include r(500){
+    @include r(500) {
       flex-wrap: wrap;
       margin-bottom: 20px;
-
     }
   }
 
   &__filter-item {
     margin: 0 8px;
-    @include r(500){
+
+    @include r(500) {
       margin-bottom: 20px;
     }
   }
@@ -40,37 +36,38 @@
 
   &__items {
     display: flex;
-    margin-bottom: 80px;
     justify-content: center;
+    margin-bottom: 80px;
 
     @include r(500) {
       flex-wrap: wrap;
       margin-bottom: 30px;
-
     }
   }
 
   &__item {
     &:first-child {
       margin-bottom: 30px;
-      @include r(650){
-        margin-bottom: 10px;
 
+      @include r(650) {
+        margin-bottom: 10px;
       }
     }
   }
 
   &__item-img {
-    @include r(1180){
+    @include r(1180) {
       width: 250px;
       height: 200px;
       object-fit: cover;
     }
-    @include r(700){
+
+    @include r(700) {
       width: 200px;
       height: 150px;
     }
-    @include r(500){
+
+    @include r(500) {
       width: 315px;
       height: 200px;
     }
@@ -78,30 +75,36 @@
 
   &__item-left {
     margin-right: 15px;
-    @include r(650){
+
+    @include r(650) {
       margin-right: 5px;
     }
-    @include r(500){
-      margin-bottom: 10px;
+
+    @include r(500) {
       margin-right: 0;
+      margin-bottom: 10px;
     }
   }
 
   &__item-mid {
     margin: 0 15px;
-    @include r(650){
+
+    @include r(650) {
       margin: 0 5px;
     }
-    @include r(500){
-      margin: 0 0 10px 0;
+
+    @include r(500) {
+      margin: 0 0 10px;
     }
   }
 
   &__item-right {
     margin-left: 15px;
+
     @include r(650) {
       margin-left: 5px;
     }
+
     @include r(500) {
       margin-left: 0;
     }
@@ -223,5 +226,9 @@
   &__item-right {
     display: flex;
     flex-direction: column;
+  }
+
+  @include r(500) {
+    padding: 40px 0;
   }
 }

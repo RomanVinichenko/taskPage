@@ -23,52 +23,27 @@ body {
   text-align: center;
   color: $title;
 
-  @include r(500){
-    font-size: 25px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -18px;
-    margin: 0 auto;
-    width: 30px;
-    height: 1px;
-    background: $title;
-  }
-
   &::after {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -15px;
-    margin: 0 auto;
+    left: 50%;
+    bottom: -20px;
     width: 50px;
-    height: 1px;
-    background: $title;
+    height: 12px;
+    background-image: url("../images/frame.svg");
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
   }
-}
 
-.hr {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -17px;
-  margin: 0 auto;
-  width: 1px;
-  height: 10px;
-  border: none;
-  background: $title;
+  @include r(500) {
+    font-size: 25px;
+  }
 }
 
 .description {
   margin: 0 auto;
   margin-bottom: 35px;
   max-width: 730px;
-  padding: 0 30px;
   font-size: 18px;
   line-height: 1.7;
   text-align: center;
@@ -96,4 +71,16 @@ body {
     min-height: 0;
     border: 0;
   }
+}
+
+.sr-only {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
 }
